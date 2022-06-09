@@ -13,7 +13,7 @@ function Tour(props) {
                         <div className="col">Từ</div>
                         <div className="col tour-price">{props.price} đ</div>
                     </div>
-                    <div className="col"><buttom className="tour-btn" >Đặt ngay</buttom></div>
+                    <div className="col"><button className="tour-btn" >Đặt ngay</button></div>
                 </div>
             </div>
         </div>
