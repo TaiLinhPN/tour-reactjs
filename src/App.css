@@ -308,3 +308,15 @@ a {
   background-color: #bdbdbd;
   padding: 0 20px;
 }
+
+.filt-radio{
+  color: rgb(142, 5, 5);
+}
+
+.find-header{
+  font-weight: 600;
+}
+
+.second-header{
+  margin-bottom: 10px;
+}

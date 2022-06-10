@@ -3,6 +3,10 @@ import  { useState } from 'react';
 
 const price = [
     {
+        id: 0,
+        name: "Tất cả"
+    },
+    {
         id: 1,
         name: "từ 0 đến 10"
     },
@@ -20,23 +24,27 @@ function FiltPrice() {
 
     const [check, setCheck] = useState()
 
-    const  get =()=> {
-        console.log(check)
-    }
+    console.log(check)
+
+    // const  get =()=> {
+    //     console.log(check)
+    // }
     return (
-        <div>
+        <div className="find-box">
+            <div className="find-header second-header">Khoảng giá</div>
             {/* <CheckBox  id="1" name="price1" value="1" text="giá" /> */}
             {
                 price.map(price => (
                     <div key={price.id}>
-                        <input type="radio"
+                        <input className='filt-radio' type="radio"
                         checked={price.id === check}
                             onChange={() =>setCheck(price.id)}
                         /> {price.name}
                     </div>
                 ))
             }
-            <button onClick={()=>get()}>submid</button>
+            {/* <button onClick={()=>get()}>submid</button> */}
+            <div className="line-find"></div>
         </div>
     )
 }

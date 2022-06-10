@@ -5,7 +5,7 @@ import CheckBox from "./filter/CheckBox"
 function SiteBar() {
     return (
         <div className="filter">
-            <div className="find">Tìm Kiếm</div>
+            <div className="find-header">Tìm Kiếm</div>
             <div className="filter-box">
                 <Find/>
                 <FiltPrice/>

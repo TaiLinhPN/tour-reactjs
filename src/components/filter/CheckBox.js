@@ -17,15 +17,15 @@ import { useState } from 'react';
 const price = [
     {
         id: 1,
-        name: "từ 0 đến 10"
+        name: "Hà Nội"
     },
     {
         id: 2,
-        name: "từ 10 đến 20"
+        name: "Đà Nẵng"
     },
     {
         id: 3,
-        name: "từ 20 đến 30"
+        name: "Hồ Chí Minh"
     }
 ]
 
@@ -49,11 +49,13 @@ function CheckBox() {
 
     }
 
-    const get = () => {
-        console.log(check)
-    }
+    // const get = () => {
+    //     console.log(check)
+    // }
     return (
-        <div>
+        <div className="find-box">
+            <div className="find-header second-header">Chủ đề</div>
+
             {/* <CheckBox  id="1" name="price1" value="1" text="giá" /> */}
             {
                 price.map(price => (
@@ -65,7 +67,9 @@ function CheckBox() {
                     </div>
                 ))
             }
-            <button onClick={() => get()}>submid</button>
+            {/* <button onClick={() => get()}>submid</button> */}
+            
+
         </div>
     )
 }
