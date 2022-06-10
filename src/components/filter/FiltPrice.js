@@ -22,7 +22,7 @@ const price = [
 
 function FiltPrice() {
 
-    const [check, setCheck] = useState()
+    const [check, setCheck] = useState(0)
 
     console.log(check)
 
@@ -34,9 +34,12 @@ function FiltPrice() {
             <div className="find-header second-header">Khoảng giá</div>
             {/* <CheckBox  id="1" name="price1" value="1" text="giá" /> */}
             {
+                
                 price.map(price => (
                     <div key={price.id}>
+                      
                         <input className='filt-radio' type="radio"
+                        
                         checked={price.id === check}
                             onChange={() =>setCheck(price.id)}
                         /> {price.name}

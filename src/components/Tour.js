@@ -1,4 +1,5 @@
 function Tour(props) {
+    
     return (
         <div className="tour c-4">
             <img className="tour-img" src={props.img} alt="tour-img" />
